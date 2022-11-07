@@ -15,8 +15,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--title-white-color);
 }
 
 ul {
@@ -29,7 +32,7 @@ a {
 
 /* LOGO */
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -49,9 +52,15 @@ a {
 
 /* SITE NAV */
 
+.site-nav .link,
+.auth-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .site-nav .link {
   color: var(--title-color);
-  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -67,7 +76,6 @@ a {
 
 .auth-nav .link {
   color: var(--main-text-color);
-  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -86,6 +94,7 @@ a {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
@@ -106,16 +115,23 @@ a {
 
 /* FEATURES */
 
+.title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features .title {
   color: var(--title-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-}
-
-.features-text {
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* WORK */
@@ -149,6 +165,7 @@ a {
 address .link {
   color: var(--footer-link-color);
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
 }
 
